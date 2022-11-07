@@ -1,5 +1,5 @@
 import pygame
-from .constants import RED, WHITE, SQUARE_SIZE, GRAY
+from .constants import *
 
 class Piece:
     PADDING = 10

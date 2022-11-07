@@ -1,6 +1,6 @@
 """บอร์ดหมากฮอส"""
 import pygame
-from .constants import BLACK, ROWS, RED, SQUARE_SIZE, COLS, WHITE
+from .constants import *
 from .piece import Piece
 class Board:
     def __init__(self):
@@ -12,10 +12,10 @@ class Board:
     
     def draw_squares(self, win):
         """วาดตาราง"""
-        win.fill(BLACK)
+        win.fill(BROWN_DARK)
         for row in range(ROWS):
             for col in range(row % 2, COLS, 2):
-                pygame.draw.rect(win, RED, (row*SQUARE_SIZE, col*SQUARE_SIZE\
+                pygame.draw.rect(win, BROWN_WHITE, (row*SQUARE_SIZE, col*SQUARE_SIZE\
                     , SQUARE_SIZE, SQUARE_SIZE))
     
     def create_board(self):
