@@ -49,5 +49,5 @@ class game:
         if slif.turn == RED:
             slif.turn == WHITE
         else:
-            slif.trun == RED
+            slif.turn == RED
             

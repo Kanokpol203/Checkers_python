@@ -19,7 +19,7 @@ def main():
     run = True
     #ช่วยคงที่ FPS ถ้าไม่ทำมันจะเร็วตามเครื่อง(ปิงปองความเร็วแสง)
     clock = pygame.time.Clock()
-    game = Game(WIN)
+    game = game(WIN)
     
     while run:
         clock.tick(FPS)
