@@ -31,7 +31,7 @@ class Board:
 def get_piece(self, row, col):
     return self.board[row][col]
 
-    def create_board(self):
+def create_board(self):
         for row in range(ROWS):
             self.board.append([])
             for col in range(COLS):
@@ -45,11 +45,17 @@ def get_piece(self, row, col):
                 else:
                     self.board[row].append(0)
         
-    def draw(self, win):
+def draw(self, win):
         self.draw_squares(win)
         for row in range(ROWS):
             for col in range(COLS):
                 piece = self.board[row][col]
                 if piece != 0:
                     piece.draw(win)
+
+def get_vaid_moves(self,piece):
+    move = {}
+    left = piece.col - 1
+    right = piece.col + 1
+    row = piece.row
 
