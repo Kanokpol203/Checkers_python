@@ -28,10 +28,10 @@ class Board:
             else:
                 self.red_king += 1
     
-def get_piece(self, row, col):
-    return self.board[row][col]
+    def get_piece(self, row, col):
+        return self.board[row][col]
 
-def create_board(self):
+    def create_board(self):
         for row in range(ROWS):
             self.board.append([])
             for col in range(COLS):
@@ -45,7 +45,7 @@ def create_board(self):
                 else:
                     self.board[row].append(0)
         
-def draw(self, win):
+    def draw(self, win):
         self.draw_squares(win)
         for row in range(ROWS):
             for col in range(COLS):
@@ -53,9 +53,9 @@ def draw(self, win):
                 if piece != 0:
                     piece.draw(win)
 
-def get_vaid_moves(self,piece):
-    move = {}
-    left = piece.col - 1
-    right = piece.col + 1
-    row = piece.row
+    def get_vaid_moves(self,piece):
+        move = {}
+        left = piece.col - 1
+        right = piece.col + 1
+        row = piece.row
 

@@ -1,7 +1,7 @@
 import pygame
 from checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE
 from checkers.board import Board
-from checkers.game import game
+from checkers.game import Game
 
 FPS = 60
 
@@ -19,7 +19,7 @@ def main():
     run = True
     #ช่วยคงที่ FPS ถ้าไม่ทำมันจะเร็วตามเครื่อง(ปิงปองความเร็วแสง)
     clock = pygame.time.Clock()
-    game = game(WIN)
+    game = Game(WIN)
     
     while run:
         clock.tick(FPS)
