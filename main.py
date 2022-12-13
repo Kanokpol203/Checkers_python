@@ -26,7 +26,11 @@ def main():
 
         #แสดงผลจบเกม
         if game.winner() != None:
-                print(game.winner())
+                if game.winner() == (255, 0, 0):
+                    print("Red won")
+                elif game.winner() == (255, 0, 0):
+                    print('White won')
+                break
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
